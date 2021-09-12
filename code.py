@@ -38,7 +38,7 @@ class pos:
 bell_pos = pos(25,120,15,100)
 missionInfo_pos = pos(330,815,600,655)
 notjoin_pos = pos(80,500,1650,1750)
-join_pos = pos(575,1000,1650,1750)
+join_pos = pos(580,950,1650,1750)
 prepare_pos = pos(320,755,1420,1550)
 finish_nextstep_pos = pos(375,700,1850,1930) 
 leave_pos = pos(160,480,1850,1930)
@@ -147,12 +147,6 @@ def IsCorrectMission(img,missions):
     print('OCR : '+mission_text)
     for temp in missions:
         if mission_text.find(temp) != -1:
-
-            #光廢龍
-            if temp == '伊魯梅塔雷伊':
-                if mission_text.find('高級十') != -1:
-                    return True
-
             if mission_text.find('超級') != -1:
                 return True
             else:
@@ -182,7 +176,7 @@ Fail = cv2.imread(fail)
 Redbtu = cv2.imread(redbtu)
 
 
-missions = ['遺跡魔像','爾之長','母親','不死族','伊魯梅塔雷伊']
+missions = ['遺跡魔像','艾基','不死族','白虎']
 count = 1
 
 while True:
