@@ -8,4 +8,4 @@ python需要以下程式:
   TESSDATA_PREFIX : C:\Program Files\Tesseract-OCR\tessdata
 
 V1.0.0 版本
-    自動刷火超、暗超、摩天樓超級、光廢龍高級+
+    自動刷火超、暗超、不死王超級、白虎超級
