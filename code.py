@@ -149,6 +149,10 @@ def IsCorrectMission(img,missions):
         if mission_text.find(temp) != -1:
             if mission_text.find('超級') != -1:
                 return True
+            #例外區
+            if (mission_text.find('警衛人偶') != -1)  & (mission_text.find('高級+')!=-1) :
+                return True
+            #例外區
             else:
                 print('Error:不是超級')
                 return False
@@ -176,7 +180,7 @@ Fail = cv2.imread(fail)
 Redbtu = cv2.imread(redbtu)
 
 
-missions = ['遺跡魔像','艾基','不死族','白虎']
+missions = ['遺跡魔像','艾基','不死族','警衛人偶']
 count = 1
 
 while True:
